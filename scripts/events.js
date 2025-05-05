@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "cleanup",
         description:
           "Join us for our monthly beach cleanup! We'll be collecting trash and debris from the shoreline to protect marine life and keep our beaches beautiful. All cleaning supplies will be provided. Please wear comfortable clothes and bring sunscreen and water.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://www.cityofsolanabeach.org/sites/default/files/styles/listing_style/public/2022-09/coastalcleanupday.jpg?itok=QnD-vgrH",
         coordinates: { lat: 34.024212, lng: -118.5069 },
       },
       {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "workshop",
         description:
           "Learn practical tips and techniques for reducing waste in your daily life. This workshop will cover composting basics, plastic alternatives, energy conservation, and more. Each participant will receive a starter kit with reusable items.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://www.innovationtraining.org/wp-content/uploads/2023/03/Sustainability-Workshops-and-Programs.jpeg",
         coordinates: { lat: 34.052235, lng: -118.2437 },
       },
       {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "cleanup",
         description:
           "Help us clean up our local river! We'll be removing trash from the riverbanks and surrounding areas. This is a family-friendly event, and children are welcome when accompanied by an adult. Lunch will be provided for all volunteers.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://sunburyrevitalization.org/wp-content/uploads/2022/01/River-Clean-up.jpg",
         coordinates: { lat: 34.090009, lng: -118.3617 },
       },
       {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "seminar",
         description:
           "Join us for a screening of an award-winning documentary about ocean conservation, followed by a panel discussion with local environmental experts. Light refreshments will be served.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://images.squarespace-cdn.com/content/v1/577d0df337c58194f7d239da/1513616457353-V1Q9Z4ND6XGBMZXNFFEG/INHABIT+-+Poster.jpg",
         coordinates: { lat: 34.019454, lng: -118.4912 },
       },
       {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "cleanup",
         description:
           "Help us restore our local park by removing invasive plant species, planting native trees and flowers, and cleaning up litter. This event is suitable for all ages and experience levels. Tools and gloves will be provided.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://i0.wp.com/conservancy.bc.ca/wp-content/uploads/2024/08/Blenkinsop-Valley-Restoration-Day-2.png?fit=1200%2C677&ssl=1",
         coordinates: { lat: 34.062115, lng: -118.4522 },
       },
       {
@@ -70,13 +70,14 @@ document.addEventListener("DOMContentLoaded", () => {
         type: "workshop",
         description:
           "Learn about proper recycling practices and how to reduce contamination in recycling bins. We'll cover what can and cannot be recycled in our local area, and how to prepare items for recycling. Each participant will receive a recycling guide.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://i.ytimg.com/vi/bEdD-uSQbjw/maxresdefault.jpg",
         coordinates: { lat: 34.052235, lng: -118.2437 },
       },
     ]
   
     // Event list
-    const eventsList = document.getElementById("events-list")
+    const eventsList = document.getElementById("events-preview");
+
   
     if (eventsList) {
       renderEvents(events)
@@ -110,32 +111,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     function renderEvents(eventsToRender) {
-      if (!eventsList) return
-  
-      let eventsHTML = ""
-  
+      let eventsHTML = "";
+
       if (eventsToRender.length === 0) {
-        eventsHTML = '<p class="no-events">No events match your search criteria. Please try different filters.</p>'
+        eventsHTML = '<p class="no-events">No events match your search criteria. Please try different filters.</p>';
       } else {
         eventsToRender.forEach((event) => {
           eventsHTML += `
-                      <div class="event-card" data-event-id="${event.id}">
-                          <div class="event-image">
-                              <img src="${event.image}" alt="${event.title}">
-                          </div>
-                          <div class="event-content">
-                              <span class="event-type ${event.type}">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</span>
-                              <h3>${event.title}</h3>
-                              <p class="event-date">${event.date} • ${event.time}</p>
-                              <p class="event-location"><i class="icon-location"></i> ${event.location}</p>
-                              <button class="btn btn-secondary view-event-btn" data-event-id="${event.id}">View Details</button>
-                          </div>
-                      </div>
-                  `
-        })
+            <div class="event-card" data-event-id="${event.id}">
+              <div class="event-image">
+                <img src="${event.image}" alt="${event.title}">
+              </div>
+              <div class="event-content">
+                <span class="event-type ${event.type}">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</span>
+                <h3>${event.title}</h3>
+                <p class="event-date">${event.date} • ${event.time}</p>
+                <p class="event-location">${event.location}</p>
+                <button class="btn btn-secondary view-event-btn" data-event-id="${event.id}">View Details</button>
+              </div>
+            </div>
+          `;
+        });
       }
-  
-      eventsList.innerHTML = eventsHTML
+
+      eventsList.innerHTML = eventsHTML;
   
       // Add event listeners to the view details buttons
       const viewEventBtns = document.querySelectorAll(".view-event-btn")
