@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Awareness and Cleanup Campaign</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EcoClean</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Join the Movement for a Cleaner Planet</h2>
+                    <p>Together we can make a difference in our community and environment through organized cleanups and sustainable practices.</p>
+                    <div class="cta-buttons">
+                        <a href="events.html" class="btn btn-primary">Join a Cleanup</a>
+                        <a href="resources.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Volunteers cleaning up a beach" id="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="impact">
+            <div class="container">
+                <h2 class="section-title">Our Impact</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number" id="cleanup-count">0</div>
+                        <p>Cleanups Organized</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="volunteer-count">0</div>
+                        <p>Volunteers</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="trash-count">0</div>
+                        <p>Tons of Trash Collected</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-grid" id="events-preview">
+                    <!-- Events will be loaded dynamically -->
+                </div>
+                <div class="center-btn">
+                    <a href="events.html" class="btn btn-primary">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Volunteers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <p>"Participating in the beach cleanup was an eye-opening experience. I never realized how much waste ends up on our shores. It felt great to make a tangible difference."</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Sarah J." class="author-img">
+                            <span>Sarah J.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"The educational workshops taught me so many practical ways to reduce waste in my daily life. I've already implemented several changes at home and at work."</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Michael T." class="author-img">
+                            <span>Michael T.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"I brought my kids to the park cleanup, and it was a wonderful way to teach them about environmental responsibility while doing something positive for our community."</p>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Lisa M." class="author-img">
+                            <span>Lisa M.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn" aria-label="Previous testimonial">&lt;</button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn" aria-label="Next testimonial">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for updates on upcoming events, environmental news, and sustainable living tips.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <div id="newsletter-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>EcoClean</h2>
+                    <p>Making our world cleaner, one community at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ecoclean.org</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Environmental Awareness and Cleanup Campaign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

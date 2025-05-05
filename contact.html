@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Environmental Awareness and Cleanup Campaign</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EcoClean</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="icon-email"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@ecoclean.org</p>
+                        <p>volunteer@ecoclean.org</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="icon-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>Main Office: (555) 123-4567</p>
+                        <p>Volunteer Hotline: (555) 765-4321</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="icon-location"></i>
+                        </div>
+                        <h3>Office Location</h3>
+                        <p>123 Green Street</p>
+                        <p>Eco City, EC 12345</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="icon-clock"></i>
+                        </div>
+                        <h3>Office Hours</h3>
+                        <p>Monday-Friday: 9am-5pm</p>
+                        <p>Saturday: 10am-2pm (by appointment)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone (optional)</label>
+                            <input type="tel" id="contact-phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="donation">Donations</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter-signup">
+                            <label for="newsletter-signup">Sign up for our newsletter</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-message"></div>
+                </div>
+                <div class="contact-image">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Team members at a cleanup event">
+                </div>
+            </div>
+        </section>
+
+        <section class="location-map">
+            <div class="container">
+                <h2 class="section-title">Find Us</h2>
+                <div class="map-container">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Map showing office location" class="office-map">
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">How can I volunteer for a cleanup event?</button>
+                        <div class="accordion-content">
+                            <p>You can sign up for upcoming cleanup events through our Events page. Simply browse the calendar, find an event that works for you, and click the "Sign Up" button. You'll receive a confirmation email with all the details you need.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Can I organize my own cleanup event?</button>
+                        <div class="accordion-content">
+                            <p>We encourage community members to organize their own events. We can provide resources, guidance, and sometimes supplies to help make your event successful. Contact us through the form above or email volunteer@ecoclean.org to get started.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How can my business partner with your campaign?</button>
+                        <div class="accordion-content">
+                            <p>We offer various partnership opportunities for businesses, from sponsoring events to employee volunteer programs. Please contact us at info@ecoclean.org with "Business Partnership" in the subject line, and our partnerships coordinator will get back to you.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Do you offer educational programs for schools?</button>
+                        <div class="accordion-content">
+                            <p>Yes, we have educational programs tailored for different age groups. We can arrange for guest speakers, provide lesson plans, or organize field trips. Visit our Resources page for more information or contact us directly to discuss your specific needs.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How can I make a donation to support your work?</button>
+                        <div class="accordion-content">
+                            <p>We appreciate your support! You can make a donation through our website's donation page, or contact us for information about in-kind donations, equipment sponsorships, or other ways to contribute.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-connect">
+            <div class="container">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-intro">Follow us on social media for updates, tips, and inspiration.</p>
+                <div class="social-grid">
+                    <a href="#" class="social-card facebook">
+                        <div class="social-icon">
+                            <i class="icon-facebook-large"></i>
+                        </div>
+                        <h3>Facebook</h3>
+                        <p>@EcoCleanCampaign</p>
+                    </a>
+                    <a href="#" class="social-card twitter">
+                        <div class="social-icon">
+                            <i class="icon-twitter-large"></i>
+                        </div>
+                        <h3>Twitter</h3>
+                        <p>@EcoClean</p>
+                    </a>
+                    <a href="#" class="social-card instagram">
+                        <div class="social-icon">
+                            <i class="icon-instagram-large"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>@ecoclean_campaign</p>
+                    </a>
+                    <a href="#" class="social-card youtube">
+                        <div class="social-icon">
+                            <i class="icon-youtube-large"></i>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>EcoClean Channel</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>EcoClean</h2>
+                    <p>Making our world cleaner, one community at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ecoclean.org</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Environmental Awareness and Cleanup Campaign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

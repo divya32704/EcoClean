@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0fdf4;
+    color: #222;
+  }
+  nav {
+    background: #2d6a4f;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header, section, h1, h2, .tip {
+    padding: 20px;
+    margin: 10px;
+  }
+  .tip {
+    background: #b7e4c7;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .tip.expanded {
+    background: #95d5b2;
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+  }
+  form input, form textarea, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+  }

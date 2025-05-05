@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Environmental Awareness and Cleanup Campaign</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EcoClean</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Educational Resources</h1>
+            </div>
+        </section>
+
+        <section class="resources-intro">
+            <div class="container">
+                <p class="intro-text">Explore our collection of resources designed to help you learn about environmental issues and adopt sustainable practices in your daily life. From guides on reducing waste to information about local ecosystems, we provide the knowledge you need to make a positive impact.</p>
+            </div>
+        </section>
+
+        <section class="resource-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All Resources</button>
+                    <button class="tab-btn" data-category="guides">Guides</button>
+                    <button class="tab-btn" data-category="videos">Videos</button>
+                    <button class="tab-btn" data-category="infographics">Infographics</button>
+                    <button class="tab-btn" data-category="research">Research</button>
+                </div>
+
+                <div class="resources-grid" id="resources-grid">
+                    <!-- Guides -->
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Recycling guide">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Comprehensive Recycling Guide</h3>
+                            <p>Learn what can and cannot be recycled in your area, and how to properly prepare items for recycling.</p>
+                            <a href="#" class="resource-link">Download PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Zero waste home">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Zero Waste Home: Getting Started</h3>
+                            <p>Simple steps to reduce waste in your home, from kitchen to bathroom and beyond.</p>
+                            <a href="#" class="resource-link">Read Guide</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Composting guide">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Backyard Composting 101</h3>
+                            <p>Everything you need to know to start composting at home, even in small spaces.</p>
+                            <a href="#" class="resource-link">View Guide</a>
+                        </div>
+                    </div>
+
+                    <!-- Videos -->
+                    <div class="resource-card" data-category="videos">
+                        <div class="resource-image video-thumbnail">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Ocean plastic documentary">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="resource-content">
+                            <h3>The Journey of Ocean Plastic</h3>
+                            <p>A short documentary on how plastic travels from our homes to the ocean, and its impact on marine life.</p>
+                            <a href="#" class="resource-link">Watch Video</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card" data-category="videos">
+                        <div class="resource-image video-thumbnail">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Sustainable living tips">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="resource-content">
+                            <h3>5 Easy Sustainable Living Tips</h3>
+                            <p>Simple changes you can make today to reduce your environmental footprint.</p>
+                            <a href="#" class="resource-link">Watch Video</a>
+                        </div>
+                    </div>
+
+                    <!-- Infographics -->
+                    <div class="resource-card" data-category="infographics">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Plastic pollution infographic">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Plastic Pollution by the Numbers</h3>
+                            <p>Visual representation of global plastic production, usage, and waste statistics.</p>
+                            <a href="#" class="resource-link">View Infographic</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card" data-category="infographics">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Water conservation infographic">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Water Conservation at Home</h3>
+                            <p>Easy ways to reduce water usage and why it matters for our environment.</p>
+                            <a href="#" class="resource-link">View Infographic</a>
+                        </div>
+                    </div>
+
+                    <!-- Research -->
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Local ecosystem research">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Local Ecosystem Health Report</h3>
+                            <p>Research on the current state of our local ecosystems and the impact of pollution.</p>
+                            <a href="#" class="resource-link">Read Report</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card" data-category="research">
+                        <div class="resource-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Climate change research">
+                        </div>
+                        <div class="resource-content">
+                            <h3>Climate Change: Local Impact Assessment</h3>
+                            <p>How climate change is affecting our community and what we can do about it.</p>
+                            <a href="#" class="resource-link">Read Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="educational-workshops">
+            <div class="container">
+                <h2 class="section-title">Educational Workshops</h2>
+                <p class="section-intro">We offer regular workshops on various environmental topics. These interactive sessions provide hands-on learning experiences for all ages.</p>
+                
+                <div class="workshops-grid">
+                    <div class="workshop-card">
+                        <div class="workshop-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Recycling workshop">
+                        </div>
+                        <div class="workshop-content">
+                            <h3>Creative Recycling Workshop</h3>
+                            <p>Learn how to transform waste materials into useful and beautiful items for your home.</p>
+                            <p><strong>Frequency:</strong> Monthly</p>
+                            <a href="events.html" class="btn btn-secondary">Find Next Workshop</a>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Composting workshop">
+                        </div>
+                        <div class="workshop-content">
+                            <h3>Composting Workshop</h3>
+                            <p>Hands-on instruction for setting up and maintaining a successful composting system.</p>
+                            <p><strong>Frequency:</strong> Bi-monthly</p>
+                            <a href="events.html" class="btn btn-secondary">Find Next Workshop</a>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Sustainable living workshop">
+                        </div>
+                        <div class="workshop-content">
+                            <h3>Sustainable Living Workshop</h3>
+                            <p>Practical tips and demonstrations for reducing waste and living more sustainably.</p>
+                            <p><strong>Frequency:</strong> Monthly</p>
+                            <a href="events.html" class="btn btn-secondary">Find Next Workshop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="for-educators">
+            <div class="container">
+                <h2 class="section-title">For Educators</h2>
+                <div class="educators-content">
+                    <div class="educators-text">
+                        <p>We offer a variety of resources specifically designed for teachers and educators who want to incorporate environmental education into their curriculum. Our materials are aligned with educational standards and can be adapted for different age groups.</p>
+                        <ul class="educators-resources">
+                            <li>Lesson plans on environmental topics</li>
+                            <li>Classroom activities and experiments</li>
+                            <li>Field trip guides for local natural areas</li>
+                            <li>Student-friendly research materials</li>
+                            <li>Interactive presentations</li>
+                        </ul>
+                        <p>We also offer workshops for educators and can arrange for guest speakers to visit your classroom.</p>
+                        <a href="contact.html" class="btn btn-primary">Request Educator Resources</a>
+                    </div>
+                    <div class="educators-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Students learning about environment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resource-request">
+            <div class="container">
+                <div class="request-content">
+                    <h2>Can't Find What You're Looking For?</h2>
+                    <p>If you need specific information or resources that aren't available here, let us know. We're constantly expanding our educational materials based on community needs.</p>
+                    <a href="contact.html" class="btn btn-secondary">Request a Resource</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>EcoClean</h2>
+                    <p>Making our world cleaner, one community at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@ecoclean.org</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Environmental Awareness and Cleanup Campaign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
