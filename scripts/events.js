@@ -111,30 +111,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     function renderEvents(eventsToRender) {
-      let eventsHTML = "";
-
+      if (!eventsList) return
+  
+      let eventsHTML = ""
+  
       if (eventsToRender.length === 0) {
-        eventsHTML = '<p class="no-events">No events match your search criteria. Please try different filters.</p>';
+        eventsHTML = '<p class="no-events">No events match your search criteria. Please try different filters.</p>'
       } else {
         eventsToRender.forEach((event) => {
           eventsHTML += `
-            <div class="event-card" data-event-id="${event.id}">
-              <div class="event-image">
-                <img src="${event.image}" alt="${event.title}">
-              </div>
-              <div class="event-content">
-                <span class="event-type ${event.type}">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</span>
-                <h3>${event.title}</h3>
-                <p class="event-date">${event.date} • ${event.time}</p>
-                <p class="event-location">${event.location}</p>
-                <button class="btn btn-secondary view-event-btn" data-event-id="${event.id}">View Details</button>
-              </div>
-            </div>
-          `;
-        });
+                      <div class="event-card" data-event-id="${event.id}">
+                          <div class="event-image">
+                              <img src="${event.image}" alt="${event.title}">
+                          </div>
+                          <div class="event-content">
+                              <span class="event-type ${event.type}">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</span>
+                              <h3>${event.title}</h3>
+                              <p class="event-date">${event.date} • ${event.time}</p>
+                              <p class="event-location"><i class="icon-location"></i> ${event.location}</p>
+                              <button class="btn btn-secondary view-event-btn" data-event-id="${event.id}">View Details</button>
+                          </div>
+                      </div>
+                  `
+        })
       }
-
-      eventsList.innerHTML = eventsHTML;
+  
+      eventsList.innerHTML = eventsHTML
   
       // Add event listeners to the view details buttons
       const viewEventBtns = document.querySelectorAll(".view-event-btn")
