@@ -19,22 +19,39 @@ EcoClean is a simple, fast website that promotes environmental responsibility an
 - Optional: Service Worker for PWA features
 
 ## Project Structure
+EcoClean/
+├── index.html                  # Home page
+├── about.html                  # About the campaign
+├── events.html                 # Cleanup events and volunteer info
+├── resources.html              # Educational guides and resources
+├── contact.html                # Contact form / social links
+│
+├── css/
+│   ├── style.css               # Main site styling
+│   ├── responsive.css          # Mobile & tablet responsiveness
+│   └── animations.css          # Optional transitions or effects
+│
+├── js/
+│   ├── main.js                 # Navigation and global scripts
+│   ├── events.js               # Event listing or filtering
+│   ├── form.js                 # Contact or signup form validation
+│   └── counters.js             # Volunteer stats / animated counters
+│
+├── assets/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── banner.jpg
+│   │   ├── cleanup1.jpg
+│   │   └── cleanup2.jpg
+│   ├── icons/
+│   │   ├── recycle.svg
+│   │   └── trash.svg
+│   └── downloads/
+│       ├── EcoGuide.pdf
+│       └── VolunteerChecklist.pdf
+│
+├── manifest.json               # For PWA setup (optional)
+├── service-worker.js           # Caching for offline mode (optional)
+├── README.md                   # Project overview and setup
+└── LICENSE                     # MIT or any open license
 
-ecoclean/
-├─ public/
-│ ├─ icons/ # Favicons and PWA icons
-│ ├─ assets/ # Images and downloads
-│ └─ manifest.json # PWA manifest (optional)
-├─ src/
-│ ├─ css/
-│ │ └─ styles.css
-│ ├─ js/
-│ │ ├─ main.js # Site interactions
-│ │ └─ analytics.js # Simple counters and metrics
-│ ├─ index.html # Home
-│ ├─ events.html # Cleanup events
-│ ├─ resources.html # Learning materials
-│ └─ about.html # Project overview
-├─ service-worker.js # Offline caching (optional)
-├─ README.md
-└─ package.json # Only if you use a dev server or React
